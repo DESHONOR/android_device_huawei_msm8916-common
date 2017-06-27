@@ -39,7 +39,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CMHW
 BOARD_HARDWARE_CLASS += \
     $(VENDOR_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/sys/touch_screen/easy_wakeup_gesture"
 
 # Flags
 BOARD_NO_SECURE_DISCARD := true
@@ -52,12 +51,12 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 
 # Init
-TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(VENDOR_PATH)/init/init_cherry.cpp
+TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(VENDOR_PATH)/init/init_msm8916.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := lineageos_cherry_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/hwY635
+TARGET_KERNEL_CONFIG := lineageos_hwY635_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -86,7 +85,7 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/recovery/recovery.fstab
 else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/recovery/twrp.fstab
 RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
-DEVICE_RESOLUTION := 720x1280
+DEVICE_RESOLUTION := 480x854
 RECOVERY_SDCARD_ON_DATA := true
 TW_NEW_ION_HEAP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
