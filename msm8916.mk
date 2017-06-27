@@ -43,10 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 854
-TARGET_SCREEN_WIDTH := 480
-
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=128m \
     dalvik.vm.heapminfree=6m \
