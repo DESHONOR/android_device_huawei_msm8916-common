@@ -71,6 +71,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     camera.msm8916 \
     Snap
 
@@ -96,6 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
     lights.msm8916
 
 # Media
@@ -118,6 +121,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors HAL
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
     calmodule.cfg \
     sensors.msm8916 \
     sensors.native
